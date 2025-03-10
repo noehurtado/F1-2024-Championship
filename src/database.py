@@ -20,7 +20,7 @@ try:
 
             df = pd.read_csv(file_path)
             
-            df.to_sql(file_name, engine, if_exists='replace', index='False')
+            df.to_sql(file_name, engine, if_exists='replace', index=False)
 
             print(f'✅ {file} uploaded as {file_name} to the DB.')
     print('🏁🏎️💨 All tables have been created')
